@@ -29,6 +29,16 @@
     </head>
 
     <body>
+        <button class="accordion" onclick="AtivAcord()">Seção 01</button>
+        <div class="panel">
+            <p>Conteudo da seção 1..</p>
+        </div>
+        <script>
+            function AtivAcord(){
+                const panel = document.querySelector('.panel')
+                panel.style.display = (panel.style.display == 'name' || panel.style.display == '')?'block' : "nome";
+            }
+        </script>
         <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
